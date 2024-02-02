@@ -12,7 +12,12 @@ export interface Platform {
     slug: string;
 }
 
-export interface FetchGamesResponse {
+export interface Genre {
+    id: number;
+    name: string;
+}
+
+export interface FetchResponse<T> {
     count: number;
-    results: Game[];
+    results: T[];
 }
