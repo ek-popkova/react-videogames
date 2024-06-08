@@ -21,13 +21,13 @@ export interface Genre {
 
 export interface FetchResponse<T> {
     count: number;
-    next?: string | null;
+    next: string | null;
     results: T[];
 }
 
 export interface GameQuery {
-    genre: Genre | null;
-    platform: Platform | null;
+    genreId?: number;
+    platformId?: number;
     sortOrder: string;
     searchText: string;
 }

@@ -1,6 +1,4 @@
-export default {
-  "count": 14,
-  "results": [
+export default [
     {
       "id": 1,
       "name": "PC",
@@ -610,4 +608,3 @@ export default {
       ]
     }
   ]
-}
