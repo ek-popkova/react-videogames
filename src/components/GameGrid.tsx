@@ -3,14 +3,13 @@ import useGames from "../hooks/useGames";
 import GameCard from "./GameCard";
 import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
-import { GameQuery } from "../instances";
+
 import React from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-interface GameGridProps {
-  gameQuery: GameQuery;
-}
-const GameGrid = ({ gameQuery }: GameGridProps) => {
+
+const GameGrid = () => {
+
   const {
     data,
     error,
@@ -18,7 +17,7 @@ const GameGrid = ({ gameQuery }: GameGridProps) => {
     isFetchingNextPage,
     fetchNextPage,
     hasNextPage,
-  } = useGames(gameQuery);
+  } = useGames();
   const skeletons = [1, 2, 3, 4, 5, 6];
 
   if (error) return <Text>{error.message}</Text>;
