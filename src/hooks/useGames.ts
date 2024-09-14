@@ -1,4 +1,4 @@
-import { useInfiniteQuery } from "@tanstack/react-query";
+import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import { FetchResponse, Game, GameQuery} from "../instances";
 import APIClient from "../services/api-client";
 import ms from 'ms';
@@ -27,6 +27,8 @@ const useGames = () => {
 
     })
 }
+
+
     // useData<Game>(
     //     '/games',
     //     {
