@@ -52,3 +52,8 @@ export interface MovieData {
     480: string;
     max: string;
 }
+
+export interface Screenshot {
+    id: number;
+    image: string;
+}
