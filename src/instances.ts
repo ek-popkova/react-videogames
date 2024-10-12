@@ -40,3 +40,15 @@ export interface GameQuery {
     sortOrder?: string;
     searchText?: string;
 }
+
+export interface Movie {
+    id: number;
+    name: string;
+    preview: string;
+    data: MovieData;
+}
+
+export interface MovieData {
+    480: string;
+    max: string;
+}
