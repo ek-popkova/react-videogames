@@ -3,6 +3,8 @@ export interface Game {
     name: string;
     background_image: string;
     parent_platforms: { platform: Platform }[];
+    genres: Genre[];
+    publishers: Publisher[];
     metacritic: number;
     rating_top: number;
     slug: string;
@@ -19,6 +21,11 @@ export interface Genre {
     id: number;
     name: string;
     image_background: string;
+}
+
+export interface Publisher {
+    id: number;
+    name: string;
 }
 
 export interface FetchResponse<T> {
